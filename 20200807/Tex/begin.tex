@@ -1,0 +1,30 @@
+\usepackage[driver=dvipdfm,truedimen,margin=2cm]{geometry}
+\geometry{top=15.4truemm, bottom=15.4truemm, left=15.4truemm, right=15.4truemm}
+%\geometry{top=35.1truemm, bottom=30truemm, left=30truemm, right=30truemm}                % See geometry.pdf to learn the layout options. There are lots. 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\setlength{\oddsidemargin}{-1truecm} %左マージンを2.54cm - 1cm
+%\setlength{\topmargin}{-1truecm} %上マージンを2.54cm - 1cm
+%\setlength{\headheight}{0mm} %ヘッダーを0mmに
+%\setlength{\headsep}{0mm} %ヘッダー本文間の間隔を0に
+%\setlength{\textwidth}{55zw}
+%\setlength{\textheight}{46\baselineskip}
+%\addtolength{\textheight}{\topskip}
+\usepackage{graphicx}	%画像を挿入したり，テキストや図の拡大縮小・回転を行うためのパッケージ．
+\usepackage{amssymb}	%that provides miscellaneous enhancements for improving the information structure and printed output of documents that contain mathematical formulas. 
+\usepackage{epstopdf}	%pstopdf is a Perl script that converts an EPS file to an ‘encapsulated’ PDF file
+\usepackage[version=3]{mhchem}	%化学式や反応式をかくためのパッケージ．
+%\usepackege{float}	%図の配置に関わるパッケージ
+\usepackage[T1]{fontenc} %T1エンコーディングを使用
+\usepackage{textcomp}	%TCフォント使用のためのマクロ
+\usepackage[utf8]{inputenc}	%ファイルがUTF-8の場合
+\renewcommand{\rmdefault}{qtm}	%Timesを本文の欧文フォントに
+%\usepackage{lmodern}　%Latin Modernフォントを使用
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\graphicspath{
+{../lab_pic/}
+}
+\title{植物生理ゼミ}
+\author{秋田幸太郎}
+\begin{document}
+	
